@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f544afeba4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="search-bar-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-bar" type="search" name="location" id="location" placeholder="">
+        </div>
+        <div class="units">
+            <p class="temp-unit">Temperature: <span class="celcius-unit selected">°C</span> / <span class="fahrenheit-unit">°F</span></p>
+            <p class="speed-unit">Speed: <span class="mph-unit selected">mph</span> / <span class="kph-unit">kph</span></p>
+            <p class="distance-unit">Distance: <span class="miles-unit selected">Miles</span> / <span class="km-unit">Kilometres</span></p>
+        </div>
+    </header>
+    <main>
+        <div class="loader"></div>
+
+        <div class="day-tabs-container"></div>
+        <table>
+            <thead>
+                <tr class="day-row">
+                    <th class="empty-cell"></th>
+                </tr>
+                <tr class="time-row">
+                    <th class="empty-cell"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="weather-row">
+                    <th>Weather</th>
+                </tr>
+                <tr class="precip-row">
+                    <th>Preciptation</th>
+                </tr>
+                <tr class="temp-row">
+                    <th>Temperature</th>
+                </tr>
+                <tr class="feels-like-row">
+                    <th>Feels like</th>
+                </tr>
+                <tr class="wind-row">
+                    <th>Wind</th>
+                </tr>
+                <tr class="gust-row">
+                    <th>Gust</th>
+                </tr>
+                <tr class="visib-row">
+                    <th>Visbility</th>
+                </tr>
+                <tr class="hum-row">
+                    <th>Humidity</th>
+                </tr>
+                <tr class="uv-row">
+                    <th>UV</th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
